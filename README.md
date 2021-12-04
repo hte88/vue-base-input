@@ -24,6 +24,13 @@ export default {
   // ...
   components: {
     vueBaseInput
+  },
+  data() {
+    return {
+      modelValue: {
+        value: '',
+        isValid: ''
+      };
   }
   // ...
 }
@@ -37,7 +44,7 @@ export default {
       <base-input
           v-model:value="modelValue.value"
           v-model:isValid="modelValue.isValid"
-          inputType="text"
+          input-type="text"
           name="email"
           label="Email"
           error-message="This email, is not good"
