@@ -1,0 +1,90 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.base-input {
+  @apply relative;
+}
+.border-valid {
+  @apply border-green-500;
+}
+.border-default {
+  @apply border-gray-200;
+}
+.border-faild {
+  @apply border-red-500;
+}
+.error-color {
+  @apply text-red-700;
+}
+.label-color {
+  @apply text-gray-500;
+}
+.bg-full {
+  @apply bg-gray-50 rounded-md;
+}
+.bg-empty {
+  @apply bg-gray-100 rounded-md;
+}
+
+.bloc-input {
+  @apply flex justify-between z-0 relative;
+}
+
+.input {
+  @apply mx-auto focus:outline-none border-0 ring-0 focus:ring-0 appearance-none bg-transparent w-full block pl-2 text-xs md:text-sm;
+}
+/* input label inside true */
+.input-label-inside {
+  @apply pt-5 pb-1;
+}
+/* input label outside true */
+.input-label-outside {
+  @apply py-3;
+}
+
+.bloc-button {
+  @apply flex;
+}
+
+.button-icon {
+  @apply justify-center items-center flex w-8 mr-2;
+}
+.button-icon img {
+  @apply w-5;
+}
+
+.label-outside {
+  @apply absolute inset-y-0 left-2 items-center flex z-[-1] duration-300 transform-none text-xs md:text-sm;
+}
+
+.label-inside {
+  @apply absolute top-1 bottom-0 left-2 items-center flex z-[-1] duration-300 transform-none text-xs md:text-sm;
+}
+
+.required {
+  @apply px-1;
+}
+
+.bloc-error {
+  @apply absolute;
+}
+.bloc-error .error-message {
+  @apply mt-1 text-xs md:text-sm;
+}
+
+input:focus-within ~ label.label-inside,
+input:not(:placeholder-shown) ~ label.label-inside {
+  @apply transform top-1 bottom-auto text-xs;
+}
+
+input:focus-within ~ label.label-outside,
+input:not(:placeholder-shown) ~ label.label-outside {
+  @apply transform -translate-y-9 -translate-x-2;
+}

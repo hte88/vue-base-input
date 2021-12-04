@@ -1,0 +1,23 @@
+{
+  "name": "vue-base-input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/base-input.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hte88/vue-base-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hte88/vue-base-input/issues"
+  },
+  "homepage": "https://github.com/hte88/vue-base-input#readme",
+  "keywords": [
+    "base-input",
+    "input"
+  ],
+  "author": "Olivier MARION",
+  "license": "MIT"
+}
