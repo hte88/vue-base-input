@@ -5,6 +5,31 @@ Base-input:
 I made it, for simplify a create form on my differents projects.
 Base-input return if your value is valid and value in Object.
 
+### Install
+
+npm:
+```sh
+npm i vue-base-input
+```
+
+yarn:
+```sh
+yarn add vue-base-input
+```
+
+```sh
+import vueBaseInput from 'vue-base-input';
+
+export default {
+  // ...
+  components: {
+    vueBaseInput
+  }
+  // ...
+}
+
+```
+
 
 ### Getting Started 🚀
 
@@ -26,15 +51,7 @@ Base-input return if your value is valid and value in Object.
       </base-input>
 ```
 
-npm:
-```sh
-npm i base-input
-```
 
-yarn:
-```sh
-yarn add base-input
-```
 
 [![Demo on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://base_input.netlify.com)
 
