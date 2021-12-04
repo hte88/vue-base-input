@@ -38,26 +38,29 @@ export default {
 ```
 
 
-### Getting Started 🚀
+### Usage 🚀
+
+```sh
+      <base-input></base-input>
+```
+
+Using ```v-model```
 
 ```sh
       <base-input
           v-model:value="modelValue.value"
           v-model:isValid="modelValue.isValid"
-          input-type="text"
-          name="email"
-          label="Email"
-          error-message="This email, is not good"
-          input-class="mb-2 border-2 rounded-md"
-          :regex="^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$"
-          :is-required="true"
-          :show-border="true"
-          :show-icon="true"
-          :label-inside="false"
       >
       </base-input>
 ```
 
+## Available props
 
+| Prop                          | Type            | Default     | Description                              |
+|-------------------------------|-----------------|-------------|------------------------------------------|
+|                               |                 |             |                                          |
+
+
+### Demo
 
 [![Demo on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://vue-base-input.netlify.app/)
