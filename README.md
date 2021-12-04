@@ -60,7 +60,4 @@ export default {
 
 
 
-[![Demo on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://base_input.netlify.com)
-
-#### Bonus links
-
+[![Demo on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://vue-base-input.netlify.app/)
