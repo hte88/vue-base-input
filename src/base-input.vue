@@ -119,7 +119,7 @@ export default {
     }
   },
   watch: {
-    value(value) {
+    modelValue(value) {
       this.update(value);
     },
     regex() {
