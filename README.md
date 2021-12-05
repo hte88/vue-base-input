@@ -59,18 +59,17 @@ Using ```v-model```
 | Prop                          | Type            | Default     | Description                                           |
 |-------------------------------|-----------------|-------------|-------------------------------------------------------|
 | is-valid                      | Boolean         | null        | return true if regex is true or if input is not empty |
-| input-type                    | String          | text        |                                                       |
+| input-type                    | String          | text        | Change input type: text, password, date               |
 | input-class                   | String          |             |                                                       |
-| is-required                   | Boolean         | false       |                                                       |
-| show-validate                 | Boolean         | true        |                                                       |
-| show-border                   | Boolean         | true        |                                                       |
-| show-icon                     | Boolean         | true        |                                                       |
-| error-message                 | String          | text        |                                                       |
-| icon                          | String          | text        |                                                       |
-| url-icon-valid                | String          | null        |                                                       |
-| url-icon-faild                | String          | null        |                                                       |
-| url-icon-open-eyes            | String          | null        |                                                       |
-| url-icon-close-eyes           | String          | null        |                                                       |
+| is-required                   | Boolean         | false       | show * after label and change border color and icon   |
+| show-border                   | Boolean         | true        | show/hide border if is-valid is true/false            |
+| show-icon                     | Boolean         | true        | show/hide icon if is-valid is true/false              |
+| error-message                 | String          | text        | show error message under input                        |
+| icon                          | String          | text        | Add icon                                              |
+| url-icon-valid                | String          | null        | Add icon success ex: :heavy_check_mark:               |
+| url-icon-faild                | String          | null        | Add icon faild ex: :x:                                                        |
+| url-icon-open-eyes            | String          | null        | Add icon open-eyes for password input type ex: :eyes: |
+| url-icon-close-eyes           | String          | null        | Add icon close-eyes for password input type ex: :eyes: |                                          
 | regex                         | String          | null        |                                                       |
 | label-inside                  | Boolean         | false       |                                                       |
 | custom-style                  | Object          |             |                                                       |
