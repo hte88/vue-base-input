@@ -41,17 +41,17 @@ export default {
 ### Usage 🚀
 
 ```sh
-<base-input></base-input>
+<vue-base-input></vue-base-input>
 ```
 
 Using ```v-model```
 
 ```sh
-<base-input
+<vue-base-input
   v-model:value="modelValue.value"
   v-model:isValid="modelValue.isValid"
 >
-</base-input>
+</vue-base-input>
 ```
 
 ## Available props
