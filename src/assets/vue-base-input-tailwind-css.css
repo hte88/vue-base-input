@@ -9,7 +9,7 @@
 }
 
 .base-input {
-  @apply relative;
+  @apply relative border-2 rounded-md;
 }
 .border-valid {
   @apply border-green-500;
