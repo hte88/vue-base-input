@@ -1,8 +1,8 @@
 {
   "name": "vue-base-input",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
-  "main": "src/base-input.vue",
+  "main": "src/vue-base-input.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,9 @@
   "homepage": "https://github.com/hte88/vue-base-input#readme",
   "keywords": [
     "base-input",
-    "input"
+    "input",
+    "without css",
+    "tailwindcss"
   ],
   "author": "Olivier MARION",
   "license": "MIT"
