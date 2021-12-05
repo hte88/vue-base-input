@@ -37,6 +37,17 @@ export default {
 
 ```
 
+### CSS
+
+Tailwind CSS
+```
+import 'vue-base-input/src/assets/vue-base-input-tailwind-css.css';
+```
+Others
+```
+Create a new css file and customize the classes like src/assets/tailwind-css.css
+```
+
 
 ### Usage 🚀
 
