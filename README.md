@@ -56,9 +56,24 @@ Using ```v-model```
 
 ## Available props
 
-| Prop                          | Type            | Default     | Description                              |
-|-------------------------------|-----------------|-------------|------------------------------------------|
-|                               |                 |             |                                          |
+| Prop                          | Type            | Default     | Description                                           |
+|-------------------------------|-----------------|-------------|-------------------------------------------------------|
+| is-valid                      | Boolean         | null        | return true if regex is true or if input is not empty |
+| input-type                    | String          | text        |                                                       |
+| input-class                   | String          |             |                                                       |
+| is-required                   | Boolean         | false       |                                                       |
+| show-validate                 | Boolean         | true        |                                                       |
+| show-border                   | Boolean         | true        |                                                       |
+| show-icon                     | Boolean         | true        |                                                       |
+| error-message                 | String          | text        |                                                       |
+| icon                          | String          | text        |                                                       |
+| url-icon-valid                | String          | null        |                                                       |
+| url-icon-faild                | String          | null        |                                                       |
+| url-icon-open-eyes            | String          | null        |                                                       |
+| url-icon-close-eyes           | String          | null        |                                                       |
+| regex                         | String          | null        |                                                       |
+| label-inside                  | Boolean         | false       |                                                       |
+| custom-style                  | Object          |             |                                                       |
 
 
 ### Demo
