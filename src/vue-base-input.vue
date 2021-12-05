@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'vue-base-input',
   model: {
     prop: 'title',
     event: 'change',
@@ -10,31 +11,31 @@ export default {
     },
     isValid: {
       type: Boolean,
-      default: null
+      default: null,
     },
     inputType: {
       type: String,
-      default: 'text'
+      default: 'text',
     },
     inputClass: {
       type: String,
-      default: ''
+      default: '',
     },
     isRequired: {
       type: Boolean,
-      default: false
+      default: false,
     },
     showBorder: {
       type: Boolean,
-      default: true
+      default: true,
     },
     showIcon: {
       type: Boolean,
-      default: true
+      default: true,
     },
     errorMessage: {
       type: String,
-      default: ''
+      default: '',
     },
     icon: {
       type: [Object, String],
@@ -83,7 +84,9 @@ export default {
   },
   computed: {
     getValueLength() {
-      return this.modelValue !== '' && this.modelValue !== null ? this.modelValue?.length : '';
+      return this.modelValue !== '' && this.modelValue !== null
+        ? this.modelValue?.length
+        : '';
     },
     getIconCheck() {
       if (this.isValidate === false) {
@@ -162,7 +165,7 @@ export default {
   },
 };
 </script>
-<template>
+<template id="vue-base-input">
   <div :class="[classBorder, inputClass, 'base-input']">
     <div
       :class="[
