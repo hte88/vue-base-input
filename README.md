@@ -45,7 +45,7 @@ import 'vue-base-input/src/assets/vue-base-input-tailwind-css.css';
 ```
 Others
 ```
-Create a new css file and customize the classes like src/assets/tailwind-css.css
+Create a new css file and customize the classes like src/assets/vue-base-input-tailwind-css.css
 ```
 
 
@@ -75,11 +75,11 @@ Using ```v-model```
 | show-border                   | Boolean         | true        | show/hide border if is-valid is true/false            |
 | show-icon                     | Boolean         | true        | show/hide icon if is-valid is true/false              |
 | error-message                 | String          | text        | show error message under input                        |
-| icon                          | String          | text        | Add url icon :lock:                                   |
-| url-icon-valid                | String          | null        | Add url icon success example: :heavy_check_mark:      |
-| url-icon-faild                | String          | null        | Add url icon faild example: :x:                       |
-| url-icon-open-eyes            | String          | null        | Add url icon open-eyes for password input type        |
-| url-icon-close-eyes           | String          | null        | Add url icon close-eyes for password input type       |                                          
+| icon                          | String|Object   | null        | Add url icon :lock:                                   |
+| url-icon-valid                | String|Object   | null        | Add url icon success example: :heavy_check_mark:      |
+| url-icon-faild                | String|Object   | null        | Add url icon faild example: :x:                       |
+| url-icon-open-eyes            | String|Object   | null        | Add url icon open-eyes for password input type        |
+| url-icon-close-eyes           | String|Object   | null        | Add url icon close-eyes for password input type       |
 | regex                         | String          | null        | build test and return is-valid true or false          |
 | label-inside                  | Boolean         | false       | if input isn't empty the label place to inside or outside input                                      |
 | custom-style                  | Object          |             |                                                       |

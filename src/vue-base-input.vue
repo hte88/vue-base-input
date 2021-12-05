@@ -24,10 +24,6 @@ export default {
       type: Boolean,
       default: false
     },
-    showValidate: {
-      type: Boolean,
-      default: true
-    },
     showBorder: {
       type: Boolean,
       default: true
