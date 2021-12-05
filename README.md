@@ -43,11 +43,59 @@ Tailwind CSS
 ```
 import 'vue-base-input/src/assets/vue-base-input-tailwind-css.css';
 ```
-Others
+CSS
 ```
-Create a new css file and customize the classes like src/assets/vue-base-input-tailwind-css.css
+import 'vue-base-input/src/assets/vue-base-input.css';
 ```
+Custom
+```sh
+/* transition */
+.fade-enter-active,
+.fade-leave-active {}
+.fade-enter-from,
+.fade-leave-to {}
+/* end transition */
 
+.base-input {}
+.border-valid {}
+.border-default {}
+.border-faild {}
+.error-color {}
+.label-color {}
+.bg-full {}
+.bg-empty {}
+.bloc-input {}
+.input {}
+
+/* input label inside true */
+.input-label-inside {}
+/* input label outside true */
+.input-label-outside {}
+
+.bloc-button {}
+.button-icon {}
+.button-icon img {}
+.label-outside {}
+.label-inside {}
+
+@media (min-width: 768px) {
+  .label-outside {}
+  .label-inside {}
+  .bloc-error .error-message {}
+}
+
+.required {}
+.bloc-error {}
+.bloc-error .error-message {}
+
+/* animation label inside/outside*/
+input:not(:-moz-placeholder-shown) ~ label.label-inside {}
+input:not(:-ms-input-placeholder) ~ label.label-inside {}
+input:focus-within ~ label.label-inside, input:not(:placeholder-shown) ~ label.label-inside {}
+input:not(:-moz-placeholder-shown) ~ label.label-outside {}
+input:not(:-ms-input-placeholder) ~ label.label-outside {}
+input:focus-within ~ label.label-outside, input:not(:placeholder-shown) ~ label.label-outside {}
+```
 
 ### Usage 🚀
 
@@ -60,7 +108,7 @@ Using ```v-model```
 ```sh
 <vue-base-input
   v-model:value="modelValue.value"
-  v-model:isValid="modelValue.isValid"
+  v-model:is-valid="modelValue.isValid"
 >
 </vue-base-input>
 ```
