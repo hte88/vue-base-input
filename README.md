@@ -60,19 +60,19 @@ Using ```v-model```
 |-------------------------------|-----------------|-------------|-------------------------------------------------------|
 | is-valid                      | Boolean         | null        | return true if regex is true or if input is not empty |
 | input-type                    | String          | text        | Change input type: text, password, date               |
-| input-class                   | String          |             |                                                       |
 | is-required                   | Boolean         | false       | show * after label and change border color and icon   |
 | show-border                   | Boolean         | true        | show/hide border if is-valid is true/false            |
 | show-icon                     | Boolean         | true        | show/hide icon if is-valid is true/false              |
 | error-message                 | String          | text        | show error message under input                        |
-| icon                          | String          | text        | Add icon                                              |
-| url-icon-valid                | String          | null        | Add icon success ex: :heavy_check_mark:               |
-| url-icon-faild                | String          | null        | Add icon faild ex: :x:                                                        |
-| url-icon-open-eyes            | String          | null        | Add icon open-eyes for password input type ex: :eyes: |
-| url-icon-close-eyes           | String          | null        | Add icon close-eyes for password input type ex: :eyes: |                                          
-| regex                         | String          | null        |                                                       |
-| label-inside                  | Boolean         | false       |                                                       |
+| icon                          | String          | text        | Add url icon :lock:                                   |
+| url-icon-valid                | String          | null        | Add url icon success example: :heavy_check_mark:      |
+| url-icon-faild                | String          | null        | Add url icon faild example: :x:                       |
+| url-icon-open-eyes            | String          | null        | Add url icon open-eyes for password input type        |
+| url-icon-close-eyes           | String          | null        | Add url icon close-eyes for password input type       |                                          
+| regex                         | String          | null        | build test and return is-valid true or false          |
+| label-inside                  | Boolean         | false       | if input isn't empty the label place to inside or outside input                                      |
 | custom-style                  | Object          |             |                                                       |
+| input-class                   | String          |             |                                                       |
 
 
 ### Demo
