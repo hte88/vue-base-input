@@ -1,7 +1,5 @@
 # `vue-base-input (Vue 3)`
 
-[![Downloads](https://img.shields.io/npm/dm/vuejs-datepicker.svg)](https://www.npmjs.com/package/vue-base-input)
-
 Base-input:
 
 Use component vue-base-input for your all forms.
@@ -9,16 +7,16 @@ Use component vue-base-input for your all forms.
 ### Install
 
 npm:
-```html
+```sh
 npm i vue-base-input
 ```
 
 yarn:
-```html
+```sh
 yarn add vue-base-input
 ```
 
-```html
+```javascript
 import vueBaseInput from 'vue-base-input'
 
 export default {
@@ -42,15 +40,15 @@ export default {
 ### CSS
 
 Tailwind CSS
-```
+```javascript
 import 'vue-base-input/src/assets/vue-base-input-tailwind-css.css';
 ```
 CSS
-```
+```javascript
 import 'vue-base-input/src/assets/vue-base-input.css';
 ```
 Custom
-```html
+```css
 /* transition */
 .fade-enter-active,
 .fade-leave-active {}
@@ -101,13 +99,13 @@ input:focus-within ~ label.label-outside, input:not(:placeholder-shown) ~ label.
 
 ### Usage 🚀
 
-```html
+```javascript
 <vue-base-input></vue-base-input>
 ```
 
 Using ```v-model```
 
-```html
+```javascript
 <vue-base-input
   v-model:value="modelValue.value"
   v-model:is-valid="modelValue.isValid"
