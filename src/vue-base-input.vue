@@ -134,6 +134,12 @@ export default {
     };
   },
   methods: {
+    callUpdateIsValid(val) {
+      this.isValidate = val;
+      if (!val) {
+        this.showErrorMessage = true;
+      }
+    },
     returnValueByLength(value, correct, incorrect, number) {
       return value >= number ? correct : incorrect;
     },

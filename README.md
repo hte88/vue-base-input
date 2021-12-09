@@ -1,24 +1,25 @@
 # `vue-base-input (Vue 3)`
 
+[![Downloads](https://img.shields.io/npm/dm/vuejs-datepicker.svg)](https://www.npmjs.com/package/vue-base-input)
+
 Base-input:
 
-I made it, for simplify a create form on my differents projects.
-Base-input return if your value is valid and value in Object.
+Use component vue-base-input for your all forms.
 
 ### Install
 
 npm:
-```sh
+```html
 npm i vue-base-input
 ```
 
 yarn:
-```sh
+```html
 yarn add vue-base-input
 ```
 
-```sh
-import vueBaseInput from 'vue-base-input';
+```html
+import vueBaseInput from 'vue-base-input'
 
 export default {
   // ...
@@ -30,7 +31,8 @@ export default {
       modelValue: {
         value: '',
         isValid: ''
-      };
+      }
+    }
   }
   // ...
 }
@@ -48,7 +50,7 @@ CSS
 import 'vue-base-input/src/assets/vue-base-input.css';
 ```
 Custom
-```sh
+```html
 /* transition */
 .fade-enter-active,
 .fade-leave-active {}
@@ -99,13 +101,13 @@ input:focus-within ~ label.label-outside, input:not(:placeholder-shown) ~ label.
 
 ### Usage 🚀
 
-```sh
+```html
 <vue-base-input></vue-base-input>
 ```
 
 Using ```v-model```
 
-```sh
+```html
 <vue-base-input
   v-model:value="modelValue.value"
   v-model:is-valid="modelValue.isValid"
@@ -123,11 +125,11 @@ Using ```v-model```
 | show-border                   | Boolean         | true        | show/hide border if is-valid is true/false            |
 | show-icon                     | Boolean         | true        | show/hide icon if is-valid is true/false              |
 | error-message                 | String          | text        | show error message under input                        |
-| icon                          | String/Object   | null        | Add url icon :lock:                                   |
-| url-icon-valid                | String/Object   | null        | Add url icon success example: :heavy_check_mark:      |
-| url-icon-faild                | String/Object   | null        | Add url icon faild example: :x:                       |
-| url-icon-open-eyes            | String/Object   | null        | Add url icon open-eyes for password input type        |
-| url-icon-close-eyes           | String/Object   | null        | Add url icon close-eyes for password input type       |
+| icon                          | String/Object   | null        | Add url icon { src: '', alt:'' } :lock:                                   |
+| url-icon-valid                | String/Object   | null        | Add url icon success { src: '', alt:'' } example: :heavy_check_mark:      |
+| url-icon-faild                | String/Object   | null        | Add url icon faild { src: '', alt:'' } example: :x:                       |
+| url-icon-open-eyes            | String   | null        | Add url icon open-eyes for password input type        |
+| url-icon-close-eyes           | String   | null        | Add url icon close-eyes for password input type       |
 | regex                         | String          | null        | build test and return is-valid true or false          |
 | label-inside                  | Boolean         | false       | if input isn't empty the label place to inside or outside input                                      |
 | custom-style                  | Object          |             |                                                       |
