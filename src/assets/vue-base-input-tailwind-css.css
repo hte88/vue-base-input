@@ -57,7 +57,7 @@
   @apply justify-center items-center flex w-8 mr-2;
 }
 .button-icon img {
-  @apply w-5;
+  @apply w-5 h-5;
 }
 
 .label-outside {
