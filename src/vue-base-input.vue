@@ -33,6 +33,10 @@ export default {
       type: Boolean,
       default: true,
     },
+    showIconPassword: {
+      type: Boolean,
+      default: true,
+    },
     errorMessage: {
       type: String,
       default: '',
@@ -140,6 +144,10 @@ export default {
         this.showErrorMessage = true;
       }
     },
+    callResetValue() {
+      this.modelValue = '';
+      this.update('');
+    },
     returnValueByLength(value, correct, incorrect, number) {
       return value >= number ? correct : incorrect;
     },
@@ -160,10 +168,13 @@ export default {
         value.length >= 1
       ) {
         this.isValidate = false;
+        this.showErrorMessage = true;
       } else if (!this.isRequired && value.length >= 1) {
         this.isValidate = true;
+        this.showErrorMessage = false;
       } else {
         this.isValidate = null;
+        this.showErrorMessage = false;
       }
       this.$emit('update:value', value);
       this.$emit('update:isValid', this.isValidate);
@@ -247,7 +258,7 @@ export default {
         ]"
       >
         <button
-          v-if="getIconEyes && showIcon && inputType === 'password'"
+          v-if="getIconEyes && showIconPassword && inputType === 'password'"
           @click.prevent="showPassword = !showPassword"
           class="button-icon"
           type="button"
