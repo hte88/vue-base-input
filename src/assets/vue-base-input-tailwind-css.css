@@ -14,6 +14,13 @@
 .base-input input:focus {
   @apply  outline-none shadow-none border-transparent;
 }
+.base-input input:-webkit-autofill,
+.base-input input:-webkit-autofill:hover,
+.base-input input:-webkit-autofill:focus {
+  @apply border-none;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 .border-valid {
   @apply border-green-500;
 }
