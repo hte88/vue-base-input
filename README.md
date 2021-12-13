@@ -58,6 +58,9 @@ Custom
 
 .base-input {}
 .base-input input:focus {}
+.base-input input:-webkit-autofill,
+.base-input input:-webkit-autofill:hover,
+.base-input input:-webkit-autofill:focus {}
 .border-valid {}
 .border-default {}
 .border-faild {}
