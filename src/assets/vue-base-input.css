@@ -13,6 +13,13 @@
   position: relative;
   border-width: 2px;
 }
+
+.base-input input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
 .border-valid {
   border: solid 2px rgb(34, 197, 94);
 }

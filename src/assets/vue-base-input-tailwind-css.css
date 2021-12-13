@@ -11,6 +11,9 @@
 .base-input {
   @apply relative border-2 rounded-md;
 }
+.base-input input:focus {
+  @apply  outline-none shadow-none border-transparent;
+}
 .border-valid {
   @apply border-green-500;
 }
