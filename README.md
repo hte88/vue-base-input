@@ -57,6 +57,7 @@ Custom
 /* end transition */
 
 .base-input {}
+.base-input input:focus {}
 .border-valid {}
 .border-default {}
 .border-faild {}
